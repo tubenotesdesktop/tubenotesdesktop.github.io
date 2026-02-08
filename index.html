@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cyberpunk-dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TubeNotes — Visual Video Knowledge Base</title>
+  <meta name="description" content="TubeNotes is a free, open-source desktop app for taking notes on YouTube videos. Infinite canvas, Kanban boards, rich text editing. Available for Windows, macOS & Linux." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="TubeNotes — Visual Video Knowledge Base" />
+  <meta property="og:description" content="Free & open-source desktop app for visual video note-taking. Canvas, Kanban, rich text editing." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://orgofjs.github.io/tubenotespages/" />
+  <meta property="og:image" content="https://raw.githubusercontent.com/orgofjs/tubenotes-desktop/main/public/pics/pic11.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="TubeNotes — Visual Video Knowledge Base" />
+  <meta name="twitter:description" content="Free & open-source desktop app for visual video note-taking." />
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/orgofjs/tubenotes-desktop/main/public/pics/pic11.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Favicon (from repo) -->
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/orgofjs/tubenotes-desktop/main/public/icon.png" />
+</head>
+
+<body>
+
+  <!-- ============================================
+       PRELOADER
+       ============================================ -->
+  <div id="preloader">
+    <div class="preloader-logo">TUBE<span>NOTES</span></div>
+    <div class="preloader-text"></div>
+    <div class="preloader-bar">
+      <div class="preloader-bar-fill"></div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <nav class="navbar">
+    <a href="#" class="nav-logo">TUBE<span>NOTES</span></a>
+
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#showcase">Preview</a></li>
+      <li><a href="#contributors">Contributors</a></li>
+      <li><a href="https://github.com/orgofjs/tubenotes-desktop" target="_blank" rel="noopener">GitHub</a></li>
+      <li>
+        <a href="https://github.com/orgofjs/tubenotes-desktop/releases/tag/v0.2.3"
+           target="_blank" rel="noopener" class="nav-cta">
+          Download
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- ============================================
+       HERO SECTION
+       ============================================ -->
+  <section class="hero" id="hero">
+    <!-- Background effects -->
+    <div class="hero-grid"></div>
+    <div class="hero-scanlines"></div>
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="hero-glow hero-glow-3"></div>
+
+    <!-- Floating shapes -->
+    <div class="hero-shapes">
+      <div class="hero-shape hero-shape-1"></div>
+      <div class="hero-shape hero-shape-2"></div>
+      <div class="hero-shape hero-shape-3"></div>
+      <div class="hero-shape hero-shape-4"></div>
+      <div class="hero-shape hero-shape-5"></div>
+    </div>
+
+    <div class="hero-content">
+      <!-- Badge -->
+      <div class="hero-badge">
+        <div class="pulse-dot"></div>
+        <span>Free &amp; Open Source — v0.2.3</span>
+      </div>
+
+      <!-- Title with glitch effect -->
+      <h1 class="hero-title">
+        <span class="glitch" data-text="TUBE">TUBE</span><span class="accent glitch" data-text="NOTES">NOTES</span>
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="hero-subtitle">Visual Video Knowledge Base</p>
+
+      <!-- CTA Buttons -->
+      <div class="hero-actions">
+        <a href="https://github.com/orgofjs/tubenotes-desktop/releases/tag/v0.2.3"
+           target="_blank" rel="noopener" class="btn-brutal btn-primary">
+          <!-- Download icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Now
+        </a>
+        <a href="https://github.com/orgofjs/tubenotes-desktop"
+           target="_blank" rel="noopener" class="btn-brutal btn-secondary">
+          <!-- GitHub icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          View Source
+        </a>
+      </div>
+
+      <!-- Platform badges -->
+      <div class="hero-platforms">
+        <span class="platform">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
+          Windows
+        </span>
+        <span class="platform">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          macOS
+        </span>
+        <span class="platform">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.504 0c-.155 0-.311.002-.465.014-.653.034-1.242.2-1.737.456-.49.254-.882.605-1.143.994-.217.323-.362.695-.434 1.088-.072.393-.086.797-.025 1.206.122.812.46 1.612.952 2.356.204.307.428.603.672.885l-.001.001c-.383.433-.782.921-1.065 1.457-.284.536-.451 1.12-.4 1.744l.001.013c.017.187.045.37.084.55-.173.066-.346.139-.511.222-.527.266-1.004.615-1.358 1.030-.354.414-.589.895-.651 1.417-.061.522.048 1.073.297 1.576.25.503.631.958 1.117 1.354.46.375.997.675 1.599.878.297.1.603.18.917.237-.163.438-.24.895-.213 1.349.034.577.193 1.149.502 1.653.309.505.762.936 1.36 1.226.297.145.626.25.983.306.357.056.742.063 1.147.01.387-.051.79-.153 1.2-.308.265-.1.529-.218.787-.352-.165.368-.259.769-.257 1.181.003.528.136 1.067.402 1.535.267.47.663.865 1.16 1.123.498.258 1.063.374 1.658.334.596-.04 1.208-.239 1.792-.58.544-.317 1.045-.735 1.465-1.226.191-.224.364-.461.519-.706.047.013.094.025.142.035.574.116 1.142.075 1.654-.057.511-.132.969-.358 1.356-.659.387-.301.697-.673.908-1.097.211-.425.32-.896.306-1.392-.014-.497-.163-.992-.449-1.472-.239-.4-.555-.758-.926-1.066a7.92 7.92 0 0 0-.256-.197c.213-.227.403-.47.57-.724.336-.51.552-1.067.633-1.635.08-.567.024-1.145-.153-1.693-.177-.548-.473-1.06-.866-1.499-.32-.358-.702-.661-1.13-.893-.067-.036-.135-.07-.204-.103.145-.35.22-.729.208-1.116-.015-.494-.162-.982-.439-1.42-.276-.438-.68-.82-1.191-1.096-.512-.276-1.119-.44-1.78-.47-.66-.03-1.364.075-2.074.3l-.009.003-.009.003c-.259.093-.51.198-.751.316.015-.253.003-.51-.036-.761-.069-.451-.216-.891-.44-1.304-.224-.413-.523-.796-.892-1.132a4.387 4.387 0 0 0-1.263-.831C13.74.109 13.122.009 12.504 0z"/></svg>
+          Linux
+        </span>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION DIVIDER
+       ============================================ -->
+  <div class="section-divider"></div>
+
+  <!-- ============================================
+       FEATURES SECTION
+       ============================================ -->
+  <section class="section features" id="features">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-label">// What you get</span>
+        <h2 class="section-title">Powerful Features</h2>
+        <p class="section-subtitle">Everything you need to organize your video knowledge</p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1: Video Notes -->
+        <div class="feature-card" data-accent="primary">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect width="15" height="14" x="1" y="5" rx="2" ry="2"/></svg>
+          </div>
+          <h3 class="feature-title">Video Notes</h3>
+          <p class="feature-desc">Take rich notes directly linked to YouTube videos. Timestamp-based annotations with full rich text editing powered by Tiptap.</p>
+        </div>
+
+        <!-- Feature 2: Infinite Canvas -->
+        <div class="feature-card" data-accent="secondary">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+          </div>
+          <h3 class="feature-title">Infinite Canvas</h3>
+          <p class="feature-desc">Visualize your ideas on an infinite whiteboard. Draw shapes, add markdown nodes, connect ideas with flows powered by React Flow.</p>
+        </div>
+
+        <!-- Feature 3: Kanban Board -->
+        <div class="feature-card" data-accent="tertiary">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="6" height="14" x="2" y="6" rx="2"/><rect width="6" height="10" x="9" y="2" rx="2"/><rect width="6" height="14" x="16" y="8" rx="2"/></svg>
+          </div>
+          <h3 class="feature-title">Kanban Board</h3>
+          <p class="feature-desc">Organize tasks with drag-and-drop boards. Track watching progress, prioritize important videos, and manage your learning workflow.</p>
+        </div>
+
+        <!-- Feature 4: Theme System -->
+        <div class="feature-card" data-accent="blue">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="2.5"/><path d="M17.5 10.5 20 8l2 2-2.5 2.5"/><path d="M3 16c0 3.5 5 3.5 5 0V4l12 4v8.5"/><circle cx="8" cy="16" r="3"/></svg>
+          </div>
+          <h3 class="feature-title">6 Themes</h3>
+          <p class="feature-desc">Choose from Cyberpunk Dark, Navy, Light and Editorial variants. Brutalist design with bold colors and sharp edges. Fully customizable.</p>
+        </div>
+
+        <!-- Feature 5: Local-First -->
+        <div class="feature-card" data-accent="orange">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/><path d="M13.73 4.18 15 2"/><path d="m6.35 7.56-1.93-.51"/><path d="m19.65 7.56 1.93-.51"/><path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/></svg>
+          </div>
+          <h3 class="feature-title">Local-First</h3>
+          <p class="feature-desc">Your data stays on your machine. SQLite database with Prisma ORM. No cloud dependency, no subscriptions. Full privacy, full control.</p>
+        </div>
+
+        <!-- Feature 6: Cross-Platform -->
+        <div class="feature-card" data-accent="primary">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+          </div>
+          <h3 class="feature-title">Cross-Platform</h3>
+          <p class="feature-desc">Built with Electron & Next.js. Runs natively on Windows, macOS and Linux. PWA support available for web browsers too.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION DIVIDER
+       ============================================ -->
+  <div class="section-divider"></div>
+
+  <!-- ============================================
+       APP SHOWCASE
+       ============================================ -->
+  <section class="section showcase" id="showcase">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-label">// See it in action</span>
+        <h2 class="section-title">App Preview</h2>
+        <p class="section-subtitle">A glimpse into the TubeNotes experience</p>
+      </div>
+
+      <!-- Tabs -->
+      <div class="showcase-tabs">
+        <button class="showcase-tab active" data-tab="library">Video Library</button>
+        <button class="showcase-tab" data-tab="canvas">Canvas Mode</button>
+        <button class="showcase-tab" data-tab="kanban">Kanban Board</button>
+      </div>
+
+      <!-- Frame -->
+      <div class="showcase-frame">
+        <div class="showcase-titlebar">
+          <div class="showcase-dot"></div>
+          <div class="showcase-dot"></div>
+          <div class="showcase-dot"></div>
+          <span class="showcase-titlebar-text">TubeNotes v0.2.3</span>
+        </div>
+        <div class="showcase-images">
+          <img
+            src="https://raw.githubusercontent.com/orgofjs/tubenotes-desktop/main/public/pics/pic11.png"
+            alt="TubeNotes Video Library"
+            class="showcase-img active"
+            data-tab="library"
+            loading="lazy"
+          />
+          <img
+            src="https://raw.githubusercontent.com/orgofjs/tubenotes-desktop/main/public/pics/pic2.png"
+            alt="TubeNotes Canvas Mode"
+            class="showcase-img"
+            data-tab="canvas"
+            loading="lazy"
+          />
+          <img
+            src="https://raw.githubusercontent.com/orgofjs/tubenotes-desktop/main/public/pics/pic3.png"
+            alt="TubeNotes Kanban Board"
+            class="showcase-img"
+            data-tab="kanban"
+            loading="lazy"
+          />
+        </div>
+      </div>
+
+      <div class="showcase-caption">
+        <span>Video Library — Organize your YouTube Notes collection</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       TECH STACK MARQUEE
+       ============================================ -->
+  <div class="section-divider"></div>
+
+  <section class="tech-stack">
+    <div class="section-header" style="padding: 0 32px; margin-bottom: 48px;">
+      <span class="section-label">// Built with</span>
+      <h2 class="section-title">Tech Stack</h2>
+    </div>
+
+    <div class="tech-marquee-wrapper">
+      <div class="tech-marquee">
+        <div class="tech-badge"><span class="tech-badge-icon">⚡</span> Next.js 16</div>
+        <div class="tech-badge"><span class="tech-badge-icon">🖥️</span> Electron 40</div>
+        <div class="tech-badge"><span class="tech-badge-icon">📘</span> TypeScript 5</div>
+        <div class="tech-badge"><span class="tech-badge-icon">🎨</span> Tailwind CSS 4</div>
+        <div class="tech-badge"><span class="tech-badge-icon">🗄️</span> SQLite</div>
+        <div class="tech-badge"><span class="tech-badge-icon">💎</span> Prisma 6</div>
+        <div class="tech-badge"><span class="tech-badge-icon">🔀</span> React Flow</div>
+        <div class="tech-badge"><span class="tech-badge-icon">✏️</span> Tiptap 3</div>
+        <div class="tech-badge"><span class="tech-badge-icon">📝</span> CodeMirror</div>
+        <div class="tech-badge"><span class="tech-badge-icon">🎬</span> Framer Motion</div>
+        <div class="tech-badge"><span class="tech-badge-icon">🔣</span> Lucide Icons</div>
+        <div class="tech-badge"><span class="tech-badge-icon">📅</span> date-fns</div>
+        <!-- Duplicate for seamless loop -->
+        <div class="tech-badge"><span class="tech-badge-icon">⚡</span> Next.js 16</div>
+        <div class="tech-badge"><span class="tech-badge-icon">🖥️</span> Electron 40</div>
+        <div class="tech-badge"><span class="tech-badge-icon">📘</span> TypeScript 5</div>
+        <div class="tech-badge"><span class="tech-badge-icon">🎨</span> Tailwind CSS 4</div>
+        <div class="tech-badge"><span class="tech-badge-icon">🗄️</span> SQLite</div>
+        <div class="tech-badge"><span class="tech-badge-icon">💎</span> Prisma 6</div>
+        <div class="tech-badge"><span class="tech-badge-icon">🔀</span> React Flow</div>
+        <div class="tech-badge"><span class="tech-badge-icon">✏️</span> Tiptap 3</div>
+        <div class="tech-badge"><span class="tech-badge-icon">📝</span> CodeMirror</div>
+        <div class="tech-badge"><span class="tech-badge-icon">🎬</span> Framer Motion</div>
+        <div class="tech-badge"><span class="tech-badge-icon">🔣</span> Lucide Icons</div>
+        <div class="tech-badge"><span class="tech-badge-icon">📅</span> date-fns</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       STATS SECTION
+       ============================================ -->
+  <section class="stats-section">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-number text-accent-primary" data-value="6" data-suffix="+">0+</div>
+        <div class="stat-label">Themes</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number text-accent-secondary" data-value="3" data-suffix="">0</div>
+        <div class="stat-label">Platforms</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number text-accent-tertiary" data-value="100" data-suffix="%">0%</div>
+        <div class="stat-label">Free &amp; Open Source</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number text-accent-blue" data-value="0" data-suffix="">0</div>
+        <div class="stat-label">Cloud Dependencies</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION DIVIDER
+       ============================================ -->
+  <div class="section-divider"></div>
+
+  <!-- ============================================
+       CONTRIBUTORS SECTION
+       ============================================ -->
+  <section class="section contributors" id="contributors">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-label">// The humans behind it</span>
+        <h2 class="section-title">Contributors</h2>
+        <p class="section-subtitle">TubeNotes is built by passionate open-source developers</p>
+      </div>
+
+      <div class="contributors-grid">
+        <!-- Contributor 1: orgofjs -->
+        <div class="contributor-card">
+          <div class="contributor-avatar">
+            <img src="https://github.com/orgofjs.png" alt="Hasan Türk" loading="lazy" />
+          </div>
+          <div class="contributor-name">Hasan Türk</div>
+          <div class="contributor-handle">@orgofjs</div>
+          <div class="contributor-role">Founder & Lead Developer</div>
+          <p class="contributor-desc">Creator of TubeNotes. Building with AI as both a hobby and a necessity.</p>
+          <a href="https://github.com/orgofjs" target="_blank" rel="noopener" class="contributor-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            GitHub Profile
+          </a>
+        </div>
+
+        <!-- Contributor 2: midhunadarvin -->
+        <div class="contributor-card">
+          <div class="contributor-avatar">
+            <img src="https://github.com/midhunadarvin.png" alt="Midhun A Darvin" loading="lazy" />
+          </div>
+          <div class="contributor-name">Midhun A Darvin</div>
+          <div class="contributor-handle">@midhunadarvin</div>
+          <div class="contributor-role">Contributor</div>
+          <p class="contributor-desc">Set up the internationalization (i18n) system for multi-language support.</p>
+          <a href="https://github.com/midhunadarvin" target="_blank" rel="noopener" class="contributor-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            GitHub Profile
+          </a>
+        </div>
+
+        <!-- Join Card -->
+        <div class="contributor-card join-card">
+          <div class="join-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+          </div>
+          <div class="contributor-name">You?</div>
+          <div class="contributor-handle" style="color: var(--fg-dim);">@your-github</div>
+          <p class="contributor-desc" style="margin-top: 10px;">Contribute code, design, translations, or ideas. Every contribution matters!</p>
+          <a href="https://github.com/orgofjs/tubenotes-desktop/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener" class="contributor-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            Start Contributing
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       OPEN SOURCE BANNER
+       ============================================ -->
+  <div class="open-source">
+    <div class="open-source-badge">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+      Apache 2.0 Licensed
+    </div>
+    <p>
+      TubeNotes is fully open source. Inspect the code, modify it to your needs,
+      self-host it, or contribute back to the community. No vendor lock-in, no hidden costs.
+    </p>
+  </div>
+
+  <!-- ============================================
+       CTA / DOWNLOAD SECTION
+       ============================================ -->
+  <section class="cta-section" id="download">
+    <div class="cta-content">
+      <h2 class="cta-title">Ready to Organize?</h2>
+      <p class="cta-desc">
+        Download TubeNotes for free and turn your video watching into structured knowledge.
+      </p>
+      <a href="https://github.com/orgofjs/tubenotes-desktop/releases/tag/v0.2.3"
+         target="_blank" rel="noopener" class="btn-brutal btn-cta">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download v0.2.3
+      </a>
+      <p class="cta-note">Windows • macOS • Linux — No account required</p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <div class="footer-logo">TUBE<span>NOTES</span></div>
+        <div class="footer-copyright">&copy; 2026 TubeNotes — Made by orgofjs</div>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/orgofjs/tubenotes-desktop" target="_blank" rel="noopener" class="footer-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          GitHub
+        </a>
+        <a href="https://github.com/orgofjs/tubenotes-desktop/issues" target="_blank" rel="noopener" class="footer-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>
+          Issues
+        </a>
+        <a href="https://github.com/orgofjs/tubenotes-desktop/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener" class="footer-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" x2="19" y1="8" y2="14"/><line x1="22" x2="16" y1="11" y2="11"/></svg>
+          Contribute
+        </a>
+        <a href="https://github.com/orgofjs/tubenotes-desktop/blob/main/ROADMAP.md" target="_blank" rel="noopener" class="footer-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+          Roadmap
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       SCRIPTS
+       ============================================ -->
+  <!-- GSAP for scroll animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
