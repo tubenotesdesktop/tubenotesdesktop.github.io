@@ -11,7 +11,7 @@ Static landing page for [TubeNotes Desktop](https://github.com/orgofjs/tubenotes
 - `images/` — App screenshots and assets (if local copies needed)
 
 ## Code Style
-- **Design system**: Cyberpunk Brutalist — see [THEME_GUIDE.md](../THEME_GUIDE.md) for palette, typography, shadows
+- **Design system**: Cyberpunk Brutalist — see [THEME_GUIDE.md](..THEME_GUIDE.md) for palette, typography, shadows
 - **CSS variables** defined in `:root` — all colors, fonts, spacing reference `var(--name)`
 - **No border-radius** — sharp corners everywhere (brutalist rule)
 - **3px borders**, **4px/6px offset shadows** — the signature brutalist shadow pattern
