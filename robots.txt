@@ -1,0 +1,7 @@
+# robots.txt — TubeNotes Landing Page
+# https://tubenotesdesktop.github.io/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://tubenotesdesktop.github.io/sitemap.xml

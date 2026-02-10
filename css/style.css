@@ -485,6 +485,10 @@ a:hover { color: var(--accent-primary); }
   gap: 20px;
   flex-wrap: wrap;
 }
+.hero-actions .btn-brutal {
+  opacity: 1;
+  visibility: visible;
+}
 
 /* Buttons */
 .btn-brutal {
@@ -542,8 +546,27 @@ a:hover { color: var(--accent-primary); }
   display: flex;
   align-items: center;
   gap: 6px;
+  transition: color 0.25s, opacity 0.25s;
 }
-.hero-platforms svg { opacity: 0.5; }
+.hero-platforms svg { opacity: 0.5; transition: opacity 0.25s, fill 0.25s; }
+
+/* Windows: hover turns blue */
+.hero-platforms .platform-windows { cursor: pointer; }
+.hero-platforms .platform-windows:hover {
+  color: var(--accent-blue);
+}
+.hero-platforms .platform-windows:hover svg {
+  opacity: 1;
+  fill: var(--accent-blue);
+}
+
+/* macOS & Linux: not available — disabled cursor */
+.hero-platforms .platform-disabled {
+  cursor: not-allowed;
+}
+.hero-platforms .platform-disabled:hover {
+  opacity: 0.35;
+}
 
 /* Scroll indicator */
 .scroll-indicator {

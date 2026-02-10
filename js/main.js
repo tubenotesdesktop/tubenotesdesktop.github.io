@@ -131,22 +131,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // Hero entrance
     const heroTimeline = gsap.timeline({ delay: 0.2 });
     heroTimeline
-      .from('.hero-badge', { opacity: 0, y: -20, duration: 0.5 })
-      .from('.hero-title', { opacity: 0, y: 30, duration: 0.6 }, '-=0.2')
-      .from('.hero-subtitle', { opacity: 0, y: 20, duration: 0.5 }, '-=0.3')
+      .from('.hero-badge', { autoAlpha: 0, y: -20, duration: 0.5, immediateRender: false })
+      .from('.hero-title', { autoAlpha: 0, y: 30, duration: 0.6, immediateRender: false }, '-=0.2')
+      .from('.hero-subtitle', { autoAlpha: 0, y: 20, duration: 0.5, immediateRender: false }, '-=0.3')
       .from('.hero-actions .btn-brutal', {
-        opacity: 0,
+        autoAlpha: 0,
         y: 20,
         duration: 0.4,
+        immediateRender: false,
         stagger: 0.15
       }, '-=0.2')
       .from('.hero-platforms .platform', {
-        opacity: 0,
+        autoAlpha: 0,
         y: 10,
         duration: 0.3,
-        stagger: 0.1
+        stagger: 0.1,
+        immediateRender: false
       }, '-=0.2')
-      .from('.scroll-indicator', { opacity: 0, duration: 0.5 }, '-=0.1');
+      .from('.scroll-indicator', { autoAlpha: 0, duration: 0.5, immediateRender: false }, '-=0.1');
 
     // Section headers
     gsap.utils.toArray('.section-header').forEach(header => {
