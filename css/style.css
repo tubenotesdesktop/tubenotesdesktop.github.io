@@ -21,6 +21,7 @@
   --accent-tertiary: #ffdd00;
   --accent-blue: #00ccff;
   --accent-orange: #ff6b35;
+  --accent-apple: #A2AAAD;
 
   /* Borders */
   --border: #2a2a2a;
@@ -560,7 +561,17 @@ a:hover { color: var(--accent-primary); }
   fill: var(--accent-blue);
 }
 
-/* macOS & Linux: not available — disabled cursor */
+/* macOS: hover turns Apple silver */
+.hero-platforms .platform-macos { cursor: pointer; }
+.hero-platforms .platform-macos:hover {
+  color: var(--accent-apple);
+}
+.hero-platforms .platform-macos:hover svg {
+  opacity: 1;
+  fill: var(--accent-apple);
+}
+
+/* Linux: not available — disabled cursor */
 .hero-platforms .platform-disabled {
   cursor: not-allowed;
 }
